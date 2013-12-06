@@ -7,6 +7,7 @@ More info on wiki.openpicus.com.<br>
 1) import files inside Flyport IDE using the external libs button.<br>
 2) add following code example in FlyportTask.c:<br>
 
+<pre>
 /* example with MCP41100 digital potentiometer (Microchip) */
 
 #include "taskFlyport.h"
