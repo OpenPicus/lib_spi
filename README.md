@@ -7,7 +7,6 @@ More info on wiki.openpicus.com.<br>
 1) import files inside Flyport IDE using the external libs button.<br>
 2) add following code example in FlyportTask.c:<br>
 
-<code>
 // example with MCP41100 digital potentiometer (Microchip)
 
 #include "taskFlyport.h"
@@ -36,7 +35,7 @@ void FlyportTask()
 
 	while(1)
 	{
-            IOPut(o5,on);
+            IOPut(p21,on);
             for(i=240;i<255;i++)
             {
                 vTaskSuspendAll();
@@ -47,8 +46,7 @@ void FlyportTask()
                 xTaskResumeAll();
                 vTaskDelay(25);
             }
-            IOPut(o5,off);
+            IOPut(p21,off);
             vTaskDelay(50);
 	}
 }
-</code>
