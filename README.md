@@ -42,7 +42,7 @@ void FlyportTask()
                 vTaskSuspendAll();
                 SPIStart(&mySPI);
                 SPIWriteByte(0b00010001);   //command: write + out1
-                SPIWriteByte(i);            //write byte that set the percent of partitioning
+                SPIWriteByte(i);            //write byte that set the percentage of partitioning
                 SPIStop(&mySPI);
                 xTaskResumeAll();
                 vTaskDelay(25);
